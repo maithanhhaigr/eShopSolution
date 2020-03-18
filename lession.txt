@@ -1,0 +1,34 @@
+Lession 1:
+- Introdure
+
+Lession 2:
+
+Lession 3:
+- Create solution
+- Create GIT
+
+Lession 4:
+-Create branh for GIT
+- Git flow: master -> develop -> feature/solution_foler --> create pull request to devolop --> bugfix/fix_error_start --> create pull request to devolop
+- Solution
+	+> N layer (Data, Business, presentation) - Data driven design
+	+> DDD (Domain driven design)
+ - Web appliction -Request piline
+
+Lession 5:
+- Design funtion
+
+Lession 6:
+- Design Database (excel)
+
+Lession 7:
+- Design Database (code)
+- Config Alias
+	+> Data Attribute configuration
+	+> Fluent API configuration (user)
+- Create Entities on code
+
+Lession 8:
+- learnentityframeworkcore.com
+- Fluent API configuration (user)
+
