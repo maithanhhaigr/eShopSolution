@@ -36,8 +36,11 @@ Lesstion 9:
 - Migration database (IDesignTime Services)
 - add-migration / update-database
 
-Lession 10
+Lession 10:
 - Data Seeding
+
+Lession 11:
+- AspNetCore Identity Database
 
 
 

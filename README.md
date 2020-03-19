@@ -6,6 +6,7 @@
 - Microsoft.EntityFrameworkCore.SqlServer
 - Microsoft.EntityFrameworkCore.Tools
 - Microsoft.EntityFrameworkCore.Design
+- Microsoft.AspNetCore.Identity.EntityFramewordCore
 ## How to youtube
 ## How to configure and run
 ## How to contribute
