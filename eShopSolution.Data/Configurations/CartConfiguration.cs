@@ -1,5 +1,4 @@
 ﻿using eShopSolution.Data.Entities;
-using eShopSolution.Data.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -8,17 +7,20 @@ using System.Text;
 
 namespace eShopSolution.Data.Configurations
 {
-    public class CategoryConfiguration : IEntityTypeConfiguration<Category>
+    public class CartConfiguration : IEntityTypeConfiguration<Cart>
     {
-        public void Configure(EntityTypeBuilder<Category> builder)
+        public void Configure(EntityTypeBuilder<Cart> builder)
         {
-            builder.ToTable("Categoties");
+            builder.ToTable("Carts");
 
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Id).UseIdentityColumn();
 
-            builder.Property(x => x.Status).HasDefaultValue(Status.Active);
+            builder.Property(x => x.Price).IsRequired();
+
+            builder.HasOne(t => t.Product).WithMany(tc => tc.Carts)
+                .HasForeignKey(tc => tc.ProductId);
         }
     }
 }
