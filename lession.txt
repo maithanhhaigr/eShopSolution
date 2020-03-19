@@ -30,10 +30,18 @@ Lession 7:
 
 Lession 8:
 - learnentityframeworkcore.com
-- Fluent API configuration (user)
+- Fluent API configuration (user) (
 
 Lesstion 9:
 - Migration database (IDesignTime Services)
+- add-migration / update-database
+
+Lession 10
+- Data Seeding
+
+
+
+
 
 
 
