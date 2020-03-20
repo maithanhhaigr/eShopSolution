@@ -42,7 +42,9 @@ Lession 10:
 Lession 11:
 - AspNetCore Identity Database
 
-
+Lession 12:
+- Application
+- SOLID: Dependency Inverse -> Dependency Injection
 
 
 
