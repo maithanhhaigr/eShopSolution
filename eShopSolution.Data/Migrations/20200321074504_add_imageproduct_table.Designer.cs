@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eShopSolution.Data.EF;
 
 namespace eShopSolution.Data.Migrations
 {
     [DbContext(typeof(EShopDbContext))]
-    partial class EShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200321074504_add_imageproduct_table")]
+    partial class add_imageproduct_table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -180,7 +182,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "f8eb4e7d-62a1-4fe3-96e9-9e3a8ff5c6d3",
+                            ConcurrencyStamp = "28ab28bc-a2f2-4fbe-a105-42c98869a8e0",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -257,7 +259,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0cd1251b-003b-4dd3-974f-f696e4fe9b04",
+                            ConcurrencyStamp = "8f4de637-5257-49d9-a7b2-b5b9ad43d90b",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EmailConfirmed = true,
                             FirstName = "Toan",
@@ -265,7 +267,7 @@ namespace eShopSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "tedu.international@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAECi5dzIMQX0XA6GLhPAhQl7MmGurXU+m09rgqSZ8r262GJZz4rKDVPM3dKh0g92BpQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKwTeArUYsgInJ3+fmQzOQki4Jgd7KX9MXzm6ByK4yi+B89FVNDQKtlLygynjfS6xw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -606,7 +608,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreate = new DateTime(2020, 3, 22, 0, 46, 4, 670, DateTimeKind.Local).AddTicks(4799),
+                            DateCreate = new DateTime(2020, 3, 21, 14, 45, 4, 222, DateTimeKind.Local).AddTicks(7108),
                             OriginalPrice = 10000,
                             Price = 20000m,
                             Stock = 0,
@@ -615,7 +617,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreate = new DateTime(2020, 3, 22, 0, 46, 4, 670, DateTimeKind.Local).AddTicks(9277),
+                            DateCreate = new DateTime(2020, 3, 21, 14, 45, 4, 223, DateTimeKind.Local).AddTicks(1617),
                             OriginalPrice = 10000,
                             Price = 20000m,
                             Stock = 0,
@@ -639,8 +641,8 @@ namespace eShopSolution.Data.Migrations
                     b.Property<DateTime>("DateCreate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("FileSize")
-                        .HasColumnType("bigint");
+                    b.Property<int>("FileSize")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()

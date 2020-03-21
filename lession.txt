@@ -51,7 +51,13 @@ Lession 13:
 - Create Customer Exception
 
 Lession 14:
-- 
+- Method - Update, Delete
+
+Lession 15:
+- Create Table ProductImage
+
+Lession 16:
+- Image Manage
 
 
 

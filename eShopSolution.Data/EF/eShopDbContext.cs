@@ -36,6 +36,8 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
 
+            modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
+
             modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("IdentityUserClaims");
             modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("IdentityUserRoles").HasKey(x => new { x.UserId, x.RoleId });
             modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("IdentityUserLogins").HasKey(x => x.UserId);
@@ -72,6 +74,8 @@ namespace eShopSolution.Data.EF
         public DbSet<Promotion> Promotions { get; set; }
 
         public DbSet<Transaction> Transactions { get; set; }
+
+        public DbSet<ProductImage> ProductImages { get; set; }
 
     }
 }
