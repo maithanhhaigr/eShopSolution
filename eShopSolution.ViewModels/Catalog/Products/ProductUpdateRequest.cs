@@ -3,14 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShopSolution.ViewModels.Catalog.Products.Manage
+namespace eShopSolution.ViewModels.Catalog.Products
 {
-    public class ProductCreateRequest
+    public class ProductUpdateRequest
     {
+        public int Id { get; set; }
 
         public decimal Price { set; get; }
         public int OriginalPrice { set; get; }
         public int Stock { set; get; }
+        public int ViewCount { set; get; }
+        public DateTime DateCreate { set; get; }
 
         public string Name { set; get; }
         public string Description { set; get; }
@@ -24,4 +27,7 @@ namespace eShopSolution.ViewModels.Catalog.Products.Manage
 
         public IFormFile ThumbnailImage { get; set; }
     }
+
+
+
 }
