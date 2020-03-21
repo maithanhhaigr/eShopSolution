@@ -43,10 +43,15 @@ Lession 11:
 - AspNetCore Identity Database
 
 Lession 12:
-- Application
+- Create Application struction
 - SOLID: Dependency Inverse -> Dependency Injection
 
+Lession 13:
+- Search and Paging
+- Create Customer Exception
 
+Lession 14:
+- 
 
 
 
