@@ -67,7 +67,8 @@ namespace eShopSolution.Application.Catalog.Products
                 };
             }
             _context.Products.Add(product);
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+            return product.Id;
         }
 
         public async Task<int> Delete(int productId)
@@ -199,6 +200,7 @@ namespace eShopSolution.Application.Catalog.Products
 
         public Task<int> AddImage(int productId, List<IFormFile> files)
         {
+            
             throw new NotImplementedException();
         }
 
@@ -213,6 +215,11 @@ namespace eShopSolution.Application.Catalog.Products
         }
 
         public Task<List<ProductImageViewModel>> GetListImage(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ProductViewModel> GetById(int productId)
         {
             throw new NotImplementedException();
         }
