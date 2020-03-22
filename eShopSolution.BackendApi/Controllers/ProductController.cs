@@ -22,44 +22,78 @@ namespace eShopSolution.BackendApi.Controllers
         }
 
         //http://localhost:port/api/product
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet("{languageId}")]
+        public async Task<IActionResult> Get(string languageId)
         {
-            var products = await _publicProductService.GetAll();
+            var products = await _publicProductService.GetAll(languageId);
             return Ok(products);
         }
 
         //http://localhost:port/api/product/public-paging
-        [HttpGet("public-paging")]
+        [HttpGet("public-paging/{languageId}")]
         public async Task<IActionResult> Get([FromQuery]GetPublicProductPagingRequest request)
         {
             var products = await _publicProductService.GetAllByCategoryId(request);
             return Ok(products);
         }
 
+
         //http://localhost:port/api/product/1
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int productId)
+        [HttpGet("{id}/{languageId}")]
+        public async Task<IActionResult> GetById(int id, string languageId)
         {
-            var product = await _manageProductService.GetById(productId);
+            var product = await _manageProductService.GetById(id, languageId);
             if (product == null)
                 return BadRequest($"Cannot find product {product}");
-
             return Ok(product);
         }
 
-
         //http://localhost:port/api/product
-        [HttpPost()]
-        public async Task<IActionResult> Create([FromBody]ProductCreateRequest request)
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm]ProductCreateRequest request)
         {
-            var result = await _manageProductService.Create(request);
-            if (result == 0)
+            var productId = await _manageProductService.Create(request);
+            if (productId == 0)
                 return BadRequest();
 
-            return Created(nameof(GetById), request);
+            var product = await _manageProductService.GetById(productId, request.LanguageId);
+
+            //return Created(nameof(GetById), product);
+            return CreatedAtAction(nameof(GetById), new { id = product }, product);
         }
 
+        //http://localhost:port/api/product
+        [HttpPut]
+        public async Task<IActionResult> Update([FromForm]ProductUpdateRequest request)
+        {
+            var affectedResult = await _manageProductService.Update(request);
+            if (affectedResult == 0)
+                return BadRequest();
+
+            return Ok();
+        }
+
+        
+        [HttpPut("price/{id}/{newPrice}")]
+        public async Task<IActionResult> Update(int id, decimal newPrice)
+        {
+            var isSuccessful = await _manageProductService.UpdatePrice(id, newPrice);
+            if (!isSuccessful)
+                return BadRequest();
+
+            return Ok();
+        }
+
+        //http://localhost:port/api/product
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var affectedResult = await _manageProductService.Delete(id);
+            if (affectedResult == 0)
+                return BadRequest();
+
+            return Ok();
+        }
 
     }
 }

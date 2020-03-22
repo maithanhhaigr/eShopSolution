@@ -115,6 +115,7 @@ namespace eShopSolution.Application.Catalog.Products
             }
 
             return await _context.SaveChangesAsync();
+
         }
 
         public async Task<bool> UpdatePrice(int productId, decimal newPrice)
@@ -219,9 +220,28 @@ namespace eShopSolution.Application.Catalog.Products
             throw new NotImplementedException();
         }
 
-        public async Task<ProductViewModel> GetById(int productId)
+        public async Task<ProductViewModel> GetById(int productId, string languageId)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            var product = await _context.Products.FindAsync(productId);
+            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId && x.LanguageId==languageId);
+
+            var productViewModel = new ProductViewModel()
+            {
+                Id = product.Id,
+                DateCreate = product.DateCreate,
+                Price = product.Price,
+                OriginalPrice = product.OriginalPrice,
+                Description = productTranslation != null ? productTranslation.Description : null,
+                LanguageId = productTranslation.LanguageId,
+                Details = productTranslation != null ? productTranslation.Details : null,
+                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
+                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
+                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
+                ViewCount = product.ViewCount,
+                Stock = product.Stock
+            };
+            return productViewModel;
         }
     }
 }

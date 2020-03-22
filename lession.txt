@@ -67,7 +67,10 @@ Lession 18:
 - Install Swargger
 
 Lession 19:
-- Create RestFull API for Product
+- Create RESTfull API for Product
+- Add, Update, Delete Product
+- languageId
+- Test by swagger
 
 
 
