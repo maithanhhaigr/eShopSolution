@@ -29,7 +29,7 @@ Lession 7:
 - Create Entities on code
 
 Lession 8:
-- learnentityframeworkcore.com
+- https://www.learnentityframeworkcore.com/
 - Fluent API configuration (user) (
 
 Lesstion 9:
@@ -83,6 +83,19 @@ Lession 21:
 Lession 22:
 - Install ...JwtBearer
 - Protected Api Swagger
+
+Lession 23:
+- Validate ViewModel
+- https://docs.fluentvalidation.net/en/latest/aspnet.html
+- search: asp.net core life cycle
+
+Lession 24:
+- https://startbootstrap.com/
+
+
+
+
+
 
 
 
