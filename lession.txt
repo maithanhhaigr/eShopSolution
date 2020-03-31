@@ -1,19 +1,24 @@
 Lession 1:
 - Introdure
+- forum.tedu.com.vn
 
 Lession 2:
+- Install
 
 Lession 3:
-- Create solution
-- Create GIT
+- Create blank solution (asp.net core 3.1)
+- Create simple Application end run
+- Indouction about solution
+- Create GIT repository and push
 
 Lession 4:
--Create branh for GIT
+- Create branh for GIT
 - Git flow: master -> develop -> feature/solution_foler --> create pull request to devolop --> bugfix/fix_error_start --> create pull request to devolop
-- Solution
+- Solution structure
 	+> N layer (Data, Business, presentation) - Data driven design
 	+> DDD (Domain driven design)
- - Web appliction -Request piline
+- Web appliction -Request piline
+- Git branches: develop, feature/create_solution_structure
 
 Lession 5:
 - Design funtion
@@ -27,14 +32,26 @@ Lession 7:
 	+> Data Attribute configuration
 	+> Fluent API configuration (user)
 - Create Entities on code
+- Git branches: feature/database_design
+- https://docs.microsoft.com/en-us/ef/core/get-started/install/
+- Package:
+	+> Microsoft.EntityFrameworkCore.SqlServer
+	+> Microsoft.EntityFrameworkCore.Design
+	+> Microsoft.EntityFrameworkCore.Tools
 
 Lession 8:
-- https://www.learnentityframeworkcore.com/
-- Fluent API configuration (user) (
+- Fluent API configuration (user)
+- https://www.learnentityframeworkcore.com/configuration/fluent-api
 
 Lesstion 9:
 - Migration database (IDesignTime Services)
 - add-migration / update-database
+- https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dbcontext-creation
+- Config create migration (Design-Time DbContext createion)
+- Parkage: 
+	+> Microsoft.Extentions.Configuration.FileExtensions
+	+> Microsoft.Extentions.Configuration.Json
+
 
 Lession 10:
 - Data Seeding
@@ -89,8 +106,15 @@ Lession 23:
 - https://docs.fluentvalidation.net/en/latest/aspnet.html
 - search: asp.net core life cycle
 
-Lession 24:
+Lession 24: (chua)
 - https://startbootstrap.com/
+
+
+Lession 25: (chua)
+
+
+Lession 26:
+- Cookie Authentication without ASP.NET Identity
 
 
 
