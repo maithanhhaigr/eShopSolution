@@ -1,6 +1,7 @@
 Lession 1:
 - Introdure
 - forum.tedu.com.vn
+- Git link: https://github.com/teduinternational/eshopsolution
 
 Lession 2:
 - Install
@@ -116,12 +117,13 @@ Lession 23:
 - https://docs.fluentvalidation.net/en/latest/aspnet.html
 - search: asp.net core life cycle
 
-Lession 24: (chua)
-- https://startbootstrap.com/
+Lession 24:
+- Git branches: feature/admin_app
+- create web admin (Asp.Net Core MVC)
+- https://startbootstrap.com/ (download template)
 
-
-Lession 25: (chua)
-
+Lession 25:
+- Login
 
 Lession 26:
 - Cookie Authentication without ASP.NET Identity
