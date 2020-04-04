@@ -40,7 +40,8 @@ Lession 7:
 	+> Microsoft.EntityFrameworkCore.Tools
 
 Lession 8:
-- Fluent API configuration (user)
+- Configuration Entity by Fluent API configuration
+- Fluent API configuration (use)
 - https://www.learnentityframeworkcore.com/configuration/fluent-api
 
 Lesstion 9:
@@ -52,16 +53,21 @@ Lesstion 9:
 	+> Microsoft.Extentions.Configuration.FileExtensions
 	+> Microsoft.Extentions.Configuration.Json
 
-
 Lession 10:
 - Data Seeding
+- https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding
+- Git branches: feature/data_seeding
 
 Lession 11:
 - AspNetCore Identity Database
+- Git branches: feature/identity_database
+- Package: 
+	+> Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 Lession 12:
 - Create Application struction
 - SOLID: Dependency Inverse -> Dependency Injection
+- Git branched: feature/application_layer
 
 Lession 13:
 - Search and Paging
@@ -74,16 +80,20 @@ Lession 15:
 - Create Table ProductImage
 
 Lession 16:
-- Image Manage
+- Image Manager (File manager)
 
 Lession 17:
 - Create BackendApi (MVC)
 - Learn Rest, RestFull
 
 Lession 18:
-- Install Swargger
+- Package:
+	+> Swargger (Swashbuckle.AspNetCore.Swagger)
+- http://bekenty.com/
 
 Lession 19:
+- Git branhes: feature/product_apis
+- Instructue Project
 - Create RESTfull API for Product
 - Add, Update, Delete Product
 - languageId

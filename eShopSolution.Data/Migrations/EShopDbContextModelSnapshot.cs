@@ -180,7 +180,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "a5b5d566-650e-40d3-ba62-e70bd4ddb8f7",
+                            ConcurrencyStamp = "d37d8fa2-32cd-414e-8b2c-6f13320deaf1",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -257,7 +257,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1ee26f92-4a96-4105-94aa-ca69d45f22bc",
+                            ConcurrencyStamp = "4ec92c18-9544-43cb-8fcb-71982a67d97d",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "tedu.international@gmail.com",
                             EmailConfirmed = true,
@@ -266,7 +266,7 @@ namespace eShopSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "tedu.international@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEBcUfG1i8GHVT8VzJcChNiHNMjG8AhUyrH72hchLMwyqG4Sy4+A3ecdDISlZkF/mvw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHLgtqUHKn9QtaTiS/10wVRY5zzSBC87FyKhhw6slfELvDh9/TQfyaYyej73y5VNfQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -607,7 +607,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreate = new DateTime(2020, 3, 25, 9, 33, 31, 116, DateTimeKind.Local).AddTicks(9223),
+                            DateCreate = new DateTime(2020, 3, 31, 16, 51, 34, 286, DateTimeKind.Local).AddTicks(1332),
                             OriginalPrice = 10000,
                             Price = 20000m,
                             Stock = 0,
@@ -616,7 +616,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreate = new DateTime(2020, 3, 25, 9, 33, 31, 117, DateTimeKind.Local).AddTicks(3815),
+                            DateCreate = new DateTime(2020, 3, 31, 16, 51, 34, 286, DateTimeKind.Local).AddTicks(5944),
                             OriginalPrice = 10000,
                             Price = 20000m,
                             Stock = 0,
