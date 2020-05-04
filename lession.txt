@@ -47,7 +47,7 @@ Lession 8:
 
 Lesstion 9:
 - Migration database (IDesignTime Services)
-- add-migration / update-database
+- add-migration / update-database / remove-migration
 - https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dbcontext-creation
 - Config create migration (Design-Time DbContext createion)
 - Parkage: 
@@ -123,9 +123,15 @@ Lession 24:
 - https://startbootstrap.com/ (download template)
 
 Lession 25:
-- Login
+- Git branches: develop
+- Login (admin / Abcd1234$)
+- https error because yet configuration certificate on server kertrel
+- Parkage:
+	+> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+	+> FluentValidation.AspNetCore
 
 Lession 26:
+- Git branches: develop
 - Cookie Authentication without ASP.NET Identity
 
 
