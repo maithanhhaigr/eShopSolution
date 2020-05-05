@@ -140,9 +140,10 @@ Lession 27:
 - Learn (tedu 35)
 
 Lession 28:
-- Create user
 - Git branches: devolop
-
+- Create user
+- Create BaseRequest
+- Add Session in Asp.Net Core
 
 
 

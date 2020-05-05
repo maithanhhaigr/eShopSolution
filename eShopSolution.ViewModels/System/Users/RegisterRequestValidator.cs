@@ -15,7 +15,7 @@ namespace eShopSolution.ViewModels.System.Users
             RuleFor(x => x.LastName).NotEmpty().WithMessage("Last is required")
                 .MaximumLength(200).WithMessage("Last name is not over 200 charactor");
 
-            RuleFor(x => x.Dob).GreaterThan(DateTime.Now.AddYears(100)).WithMessage("Birthday cannot greater then 100 years");
+            RuleFor(x => x.Dob).GreaterThan(DateTime.Now.AddYears(-100)).WithMessage("Birthday cannot greater then 100 years");
 
             RuleFor(x => x.Email).NotEmpty().WithMessage("Email is required")
                 .Matches(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$").WithMessage("Email format not match");

@@ -31,7 +31,7 @@ namespace eShopSolution.AdminApp
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
             {
-                options.LoginPath = "/User/Login";
+                options.LoginPath = "/Login/Index";
                 options.AccessDeniedPath = "/User/Forbidden/";
             });
 
@@ -39,7 +39,7 @@ namespace eShopSolution.AdminApp
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromSeconds(30);
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
             });
 
             services.AddTransient<IUserApiClient, UserApiClient>();
