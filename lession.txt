@@ -131,11 +131,13 @@ Lession 25:
 	+> FluentValidation.AspNetCore
 
 Lession 26:
-- Git branches: develop
+- Git branches: feature/26_cookie_authentication_without_identity
 - Cookie Authentication without ASP.NET Identity
 
-
-
+Lession 27:
+- Get list user
+- Git branches: devolop
+- Learn (tedu 35)
 
 
 
