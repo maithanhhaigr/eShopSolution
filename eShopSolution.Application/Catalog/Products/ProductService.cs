@@ -140,7 +140,7 @@ namespace eShopSolution.Application.Catalog.Products
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1. Select join
             var query = from p in _context.Products
@@ -181,7 +181,7 @@ namespace eShopSolution.Application.Catalog.Products
                 }).ToListAsync();
 
             //4. Select and projection
-            var pageResult = new PageResult<ProductViewModel>()
+            var pageResult = new PagedResult<ProductViewModel>()
             {
                 TotalRecord = totalRow,
                 Items = data
@@ -333,7 +333,7 @@ namespace eShopSolution.Application.Catalog.Products
         //    return data;
         //}
 
-        public async Task<PageResult<ProductViewModel>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request)
         {
             //1. Select join
             var query = from p in _context.Products
@@ -372,7 +372,7 @@ namespace eShopSolution.Application.Catalog.Products
                 }).ToListAsync();
 
             //4. Select and projection
-            var pageResult = new PageResult<ProductViewModel>()
+            var pageResult = new PagedResult<ProductViewModel>()
             {
                 TotalRecord = totalRow,
                 Items = data
