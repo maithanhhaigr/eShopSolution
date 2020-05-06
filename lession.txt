@@ -155,6 +155,9 @@ Lession 30:
 - PagedResultBase
 - View component Asp.Net Core
 
+Lession 31:
+- Git branches: feature/31_user_delete
+- User Delete
 
 
 
