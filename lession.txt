@@ -172,7 +172,9 @@ Lession 34:
 - Git branches: feature/34_role_assign
 - Role Assign
 
-
+Lession 35
+- Git branches: feature/35_setting_language
+- Setting Language
 
 
 
