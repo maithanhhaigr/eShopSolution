@@ -110,7 +110,7 @@ Lession 21:
 
 Lession 22:
 - Install ...JwtBearer
-- Protected Api Swagger
+- Protected Api Swagger (Add Authorazation to Swagger)
 
 Lession 23:
 - Validate ViewModel
@@ -167,6 +167,10 @@ Lession 33:
 - Git branches: feature/33_temp_data
 - TempData
 - getboostrap.com
+
+Lession 34:
+- Git branches: feature/34_role_assign
+- Role Assign
 
 
 
