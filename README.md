@@ -195,6 +195,7 @@
 ##Lession 36
 - Git branches: feature/36_product_list
 - List product
+- Used ViewComponents https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-3.1
 
 
 
